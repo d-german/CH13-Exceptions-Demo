@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CannotBeZeroException.cs" />
     <Compile Include="MilesPerGallon.cs" />
     <Compile Include="NegativeNumberException.cs" />
     <Compile Include="Program.cs" />

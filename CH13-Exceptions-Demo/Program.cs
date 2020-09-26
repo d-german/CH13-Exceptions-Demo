@@ -6,10 +6,18 @@ namespace CH13_Exceptions_Demo
     {
         private static void Main(string[] args)
         {
-            Unhandled();
-            //Handled();
-            //TryParse();
-            //ThrowExample();
+            Console.WriteLine("Enter number of miles");
+            var numMiles = Console.ReadLine();
+            Console.WriteLine("Enter number of gallons");
+            var numGallons = Console.ReadLine();
+
+            var mpg = new MilesPerGallon
+            {
+                Miles = double.Parse(numMiles),
+                Gallons = double.Parse(numGallons)
+            };
+
+            Console.WriteLine(mpg.Mpg);
         }
 
         private static void Unhandled()
